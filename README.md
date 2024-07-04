@@ -13,7 +13,7 @@ This project is a home security system built using a NodeMCU, an ultrasonic sens
 
 ## Circuit Diagram
 
-![Circuit Diagram](homesecurity system_breadboard_circuit diagram.jpg)
+![Circuit Diagram](circuit_diagram.jpg)
 
 ## How It Works
 
