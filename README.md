@@ -43,7 +43,7 @@ The HC-SR04 ultrasonic sensor measures the distance to an object. If an object c
 
 Watch the following video for a demonstration of the Home Security Bot in action:
 
-[![Home Security Bot Demonstration](https://img.youtube.com/vi/_iyvJMkf_yY/0.jpg)](https://youtu.be/_iyvJMkf_yY)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_iyvJMkf_yY" frameborder="0" allowfullscreen></iframe>
 
 ## Troubleshooting
 
