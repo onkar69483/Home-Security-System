@@ -13,13 +13,12 @@ This project is a smart home security system built using a NodeMCU, an ultrasoni
 
 ## Circuit Diagram and Demonstration
 
-### Circuit Diagram
-
-![Circuit Diagram](circuit_diagram.jpg)
-
-### Demonstration Video
-
-[![Home Security Bot Demonstration](https://img.youtube.com/vi/_iyvJMkf_yY/0.jpg)](https://youtu.be/_iyvJMkf_yY)
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="https://github.com/onkar69483/Home-Security-System/blob/main/circuit_diagram.jpg" alt="Circuit Diagram" width="45%" style="margin-right: 2%;" />
+  <a href="https://youtu.be/_iyvJMkf_yY" style="width: 40%;">
+    <img src="https://img.youtube.com/vi/_iyvJMkf_yY/0.jpg" alt="Home Security Bot Demonstration" width="35%" />
+  </a>
+</div>
 
 ## How It Works
 
