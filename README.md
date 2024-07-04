@@ -11,9 +11,15 @@ This project is a smart home security system built using a NodeMCU, an ultrasoni
 - Breadboard
 - Jumper wires
 
-## Circuit Diagram
+## Circuit Diagram and Demonstration
+
+### Circuit Diagram
 
 ![Circuit Diagram](circuit_diagram.jpg)
+
+### Demonstration Video
+
+[![Home Security Bot Demonstration](https://img.youtube.com/vi/_iyvJMkf_yY/0.jpg)](https://youtu.be/_iyvJMkf_yY)
 
 ## How It Works
 
@@ -38,12 +44,6 @@ The HC-SR04 ultrasonic sensor measures the distance to an object. If an object c
 - Power the NodeMCU with a USB cable or a 5V power source.
 - The ultrasonic sensor will continuously measure the distance.
 - If an object is detected within the specified range, the LED will light up, the buzzer will sound, and a notification will be sent to Telegram.
-
-## Demonstration
-
-Watch the following video for a demonstration of the Home Security Bot in action:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_iyvJMkf_yY" frameborder="0" allowfullscreen></iframe>
 
 ## Troubleshooting
 
