@@ -1,6 +1,6 @@
 # Home Security Bot
 
-This project is a home security system built using a NodeMCU, an ultrasonic sensor (HC-SR04), an LED, and a buzzer. The system detects motion and alerts by lighting up the LED and sounding the buzzer.
+This project is a smart home security system built using a NodeMCU, an ultrasonic sensor (HC-SR04), an LED, and a buzzer. The system detects motion and alerts by lighting up the LED, sounding the buzzer, and sending notifications to Telegram.
 
 ## Components
 
@@ -17,7 +17,7 @@ This project is a home security system built using a NodeMCU, an ultrasonic sens
 
 ## How It Works
 
-The HC-SR04 ultrasonic sensor measures the distance to an object. If an object comes within a certain distance, the NodeMCU triggers the LED and buzzer to alert the presence of an object or person.
+The HC-SR04 ultrasonic sensor measures the distance to an object. If an object comes within a certain distance, the NodeMCU triggers the LED and buzzer to alert the presence of an object or person, and sends a notification to a predefined Telegram channel.
 
 ## Setup Instructions
 
@@ -33,59 +33,17 @@ The HC-SR04 ultrasonic sensor measures the distance to an object. If an object c
     - Select the correct board and port from the Tools menu.
     - Upload the code to the NodeMCU.
 
-## Code
-
-The code for this project can be found in the `homesecuritybot.ino` file. Here is a brief overview of the code:
-
-```cpp
-#include <ESP8266WiFi.h>
-
-// Define pins for the ultrasonic sensor
-#define trigPin D1
-#define echoPin D2
-
-// Define pins for the LED and buzzer
-#define ledPin D3
-#define buzzerPin D4
-
-void setup() {
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
-  pinMode(ledPin, OUTPUT);
-  pinMode(buzzerPin, OUTPUT);
-  Serial.begin(9600);
-}
-
-void loop() {
-  long duration, distance;
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  
-  duration = pulseIn(echoPin, HIGH);
-  distance = (duration / 2) / 29.1;
-  
-  if (distance <= 10) { // Change this value to set the alert distance
-    digitalWrite(ledPin, HIGH);
-    digitalWrite(buzzerPin, HIGH);
-  } else {
-    digitalWrite(ledPin, LOW);
-    digitalWrite(buzzerPin, LOW);
-  }
-  
-  Serial.print("Distance: ");
-  Serial.println(distance);
-  delay(500);
-}
-```
-
 ## Usage
 
 - Power the NodeMCU with a USB cable or a 5V power source.
 - The ultrasonic sensor will continuously measure the distance.
-- If an object is detected within the specified range, the LED will light up and the buzzer will sound.
+- If an object is detected within the specified range, the LED will light up, the buzzer will sound, and a notification will be sent to Telegram.
+
+## Demonstration
+
+Watch the following video for a demonstration of the Home Security Bot in action:
+
+[![Home Security Bot Demonstration](https://img.youtube.com/vi/_iyvJMkf_yY/0.jpg)](https://youtu.be/_iyvJMkf_yY)
 
 ## Troubleshooting
 
